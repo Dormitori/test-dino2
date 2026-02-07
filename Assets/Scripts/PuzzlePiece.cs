@@ -109,9 +109,7 @@ public class PuzzlePiece : MonoBehaviour
         Touch touch = Input.GetTouch(0);
         Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
         
-        
-        Vector2 distance_to_screen = Camera.main.WorldToScreenPoint(transform.position);
-        Vector2 pos_move = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y));
+        Vector2 pos_move = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y));
         Vector2 pos = new Vector3( pos_move.x - distance.x , pos_move.y - distance.y);
 
         switch (touch.phase)
@@ -119,6 +117,7 @@ public class PuzzlePiece : MonoBehaviour
             case TouchPhase.Began:
                 if(_collider2D == Physics2D.OverlapPoint(touchPosition))
                 {
+                    distance = touchPosition - (Vector2)transform.position;
                     isTouched = true;
                     ChangeSortingOrder(2);
                     _animationHandler.StartAnimation(shadowAnimationDuration, 1, false, Vector2.zero);
