@@ -148,8 +148,20 @@ public class PuzzlePiece : MonoBehaviour
 
     private void MovePiece(Vector2 targetPosition, float smoothMultiplier)
     {
+        targetPosition = ClampToScreen(targetPosition);
         Vector2 motionPosition = Vector2.Lerp(_transform.position, targetPosition, smoothMultiplier * Time.deltaTime);
         _transform.position = motionPosition;
+    }
+
+    private Vector2 ClampToScreen(Vector2 position)
+    {
+        Vector2 screenBottomLeft = Camera.main.ViewportToWorldPoint(new Vector3(0.05f, 0.05f, Camera.main.nearClipPlane));
+        Vector2 screenTopRight = Camera.main.ViewportToWorldPoint(new Vector3(0.95f, 0.95f, Camera.main.nearClipPlane));
+
+        float clampedX = Mathf.Clamp(position.x, screenBottomLeft.x, screenTopRight.x);
+        float clampedY = Mathf.Clamp(position.y, screenBottomLeft.y, screenTopRight.y);
+
+        return new Vector2(clampedX, clampedY);
     }
 
     private void StickToRightPlace(Vector2 targetPlace, PositionsTypes type, float accuracy)
