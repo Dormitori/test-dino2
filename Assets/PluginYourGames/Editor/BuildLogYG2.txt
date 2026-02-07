@@ -1,0 +1,3 @@
+﻿Build path: C:/UnityProjects/Test Dino 2/Build
+Build number: 0
+PluginYG version: 2.007
