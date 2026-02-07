@@ -64,19 +64,15 @@ public class PuzzlePiece : MonoBehaviour
 
     private void Update()
     {
-        if(inInitialPlace)
+        if(inInitialPlace && !inRightPlace)
         {
-            if (!_puzzleHandler.UseMouse)
+            if (Input.touchCount > 0)
             {
-                if (Input.touchCount > 0 && !inRightPlace)
-                {
-                    HandlePressing();
-                }
+                HandlePressing();
             }
             else
             {
-                if (!inRightPlace)
-                    MouseMove();
+                MouseMove();
             }
         }
     }
@@ -187,31 +183,26 @@ public class PuzzlePiece : MonoBehaviour
         }
     }
 
-    private void MouseMove() // ñèìóëÿöèÿ òà÷åé äëÿ óäîáíîé ðàáîòû â ðåäàêòîðå
+    private void MouseMove()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         TouchPhase touch = TouchPhase.Canceled;
         
-        Vector2 distance_to_screen = Camera.main.WorldToScreenPoint(transform.position);
         Vector2 pos_move = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y));
         Vector2 pos = new Vector3( pos_move.x - distance.x , pos_move.y - distance.y);
 
-
-        if (Input.touchCount == 0)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                firstPress = true;
-                touch = TouchPhase.Began;
-            }
-            if (Input.GetMouseButton(0) && !firstPress)
-            {
-                touch = TouchPhase.Moved;
-            }
-            if (Input.GetMouseButtonUp(0))
-            {
-                touch = TouchPhase.Ended;
-            }
+            firstPress = true;
+            touch = TouchPhase.Began;
+        }
+        if (Input.GetMouseButton(0) && !firstPress)
+        {
+            touch = TouchPhase.Moved;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            touch = TouchPhase.Ended;
         }
 
         switch (touch)
