@@ -155,8 +155,8 @@ public class PuzzlePiece : MonoBehaviour
 
     private Vector2 ClampToScreen(Vector2 position)
     {
-        Vector2 screenBottomLeft = Camera.main.ViewportToWorldPoint(new Vector3(0.05f, 0.05f, Camera.main.nearClipPlane));
-        Vector2 screenTopRight = Camera.main.ViewportToWorldPoint(new Vector3(0.95f, 0.95f, Camera.main.nearClipPlane));
+        Vector2 screenBottomLeft = Camera.main.ViewportToWorldPoint(new Vector3(0.15f, 0.15f, Camera.main.nearClipPlane));
+        Vector2 screenTopRight = Camera.main.ViewportToWorldPoint(new Vector3(0.85f, 0.85f, Camera.main.nearClipPlane));
 
         float clampedX = Mathf.Clamp(position.x, screenBottomLeft.x, screenTopRight.x);
         float clampedY = Mathf.Clamp(position.y, screenBottomLeft.y, screenTopRight.y);
