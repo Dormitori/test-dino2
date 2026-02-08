@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class LanguageChanger : MonoBehaviour
@@ -35,9 +35,11 @@ public class LanguageChanger : MonoBehaviour
 
     public void ChangeLanguage()
     {
-        LanguageHandler.language = (LanguageHandler.language == LanguageType.English)
-            ? LanguageType.Russian
-            : LanguageType.English;
+        // Switch language using YG2 module
+        string newLang = (LanguageHandler.language == LanguageType.English) ? "ru" : "en";
+        YG.YG2.SwitchLanguage(newLang);
+        
+        // Update UI text
         if (LanguageHandler.language == LanguageType.English)
         {
             GameObject.Find("TextDino").GetComponent<Text>().text = "Dinosaur puzzles";
