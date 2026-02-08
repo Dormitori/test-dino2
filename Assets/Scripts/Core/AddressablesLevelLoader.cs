@@ -4,12 +4,13 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class AddressablesLevelLoader : MonoBehaviour
 {
     public static AddressablesLevelLoader Instance { get; private set; }
     
-    [SerializeField] private SplashScreen splashScreen;
+    [SerializeField] private Image splashScreen;
     
     private AsyncOperationHandle<SceneInstance> currentSceneHandle;
     
@@ -41,7 +42,7 @@ public class AddressablesLevelLoader : MonoBehaviour
     {
         if (splashScreen != null)
         {
-            splashScreen.Show();
+            splashScreen.gameObject.SetActive(true);
         }
         
         if (currentSceneHandle.IsValid())
@@ -50,38 +51,22 @@ public class AddressablesLevelLoader : MonoBehaviour
             yield return unloadOperation;
         }
         
-        var loadOperation = Addressables.LoadSceneAsync(levelAddress, LoadSceneMode.Single);
-        
-        while (!loadOperation.IsDone)
-        {
-            float progress = loadOperation.PercentComplete;
-            
-            if (splashScreen != null)
-            {
-                splashScreen.UpdateProgress(progress);
-            }
-            
-            yield return null;
-        }
-        
+        var loadOperation = Addressables.LoadSceneAsync(levelAddress);
+
+        yield return loadOperation;
+
         if (loadOperation.Status == AsyncOperationStatus.Succeeded)
         {
             currentSceneHandle = loadOperation;
-            
-            if (splashScreen != null)
-            {
-                splashScreen.UpdateProgress(1f);
-                yield return new WaitForSeconds(0.5f);
-                splashScreen.Hide();
-            }
         }
         else
         {
             Debug.LogError($"Failed to load level: {levelAddress}");
-            if (splashScreen != null)
-            {
-                splashScreen.Hide();
-            }
+        }
+
+        if (splashScreen != null)
+        {
+            splashScreen.gameObject.SetActive(false);
         }
     }
     
