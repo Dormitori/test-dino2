@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 2115e2083be4aa84e89c7bc4b0b87823
   m_currentHash:
     serializedVersion: 2
-    Hash: 0a0ecbe8aa85171bc23aaec06eae8dda
+    Hash: 54ea338e4169a8120755b24f10691d01
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -60,8 +60,19 @@ MonoBehaviour:
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
+  - {fileID: 11400000, guid: be59733198d9aab46a4ca85c8854a333, type: 2}
+  - {fileID: 11400000, guid: da7b17632cb210042bf917eaa5e28028, type: 2}
   - {fileID: 11400000, guid: d0446f182e6e6b14cae76042ad774622, type: 2}
-  - {fileID: 11400000, guid: 529661209ab9d2d4ea88b4cfcdf7b3ab, type: 2}
+  - {fileID: 11400000, guid: e430b818e8c78c44994aded60baf9bfa, type: 2}
+  - {fileID: 11400000, guid: 75c62142f418e0b429f317d09469d9a1, type: 2}
+  - {fileID: 11400000, guid: 15974278f5c6309418259b9f8583a623, type: 2}
+  - {fileID: 11400000, guid: e73170722bdd5554c94600e17b08f531, type: 2}
+  - {fileID: 11400000, guid: f10e77c5dae1e5749a8526e7da277067, type: 2}
+  - {fileID: 11400000, guid: af68c3c931253e347946c358b5177f54, type: 2}
+  - {fileID: 11400000, guid: 37213f7c09d1c3846ab71e8d940369cf, type: 2}
+  - {fileID: 11400000, guid: fa561b69baa064f4c9d72867ab165af5, type: 2}
+  - {fileID: 11400000, guid: 7a41cbebeb8711349b534421e5693354, type: 2}
+  - {fileID: 11400000, guid: 77ec88c558d1ad040ba94aa768f447a2, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
     m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
@@ -74,7 +85,7 @@ MonoBehaviour:
       - m_Id: 2a48166d64621ee45bc2c9a92afa04b5
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: 837f4a411ab3c9145835b816d17fd1cd
-        m_Value: https://github.com/Dormitori/test-dino2/RemoteGitHub
+        m_Value: https://Dormitori.github.io/test-dino2/RemoteGitHub/
       - m_Id: a65d46bd04610f5429f675968c32549a
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: b274e27977563c44492fd9b45e2c15ad
