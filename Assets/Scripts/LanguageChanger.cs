@@ -4,8 +4,19 @@ using UnityEngine.UI;
 public class LanguageChanger : MonoBehaviour
 {
     public GameObject Pn_Exit;
+    
+    private void OnEnable()
+    {
+        LanguageHandler.onLanguageChanged += UpdateUI;
+        UpdateUI();
+    }
+    
+    private void OnDisable()
+    {
+        LanguageHandler.onLanguageChanged -= UpdateUI;
+    }
+    
     void Update()
-
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -19,7 +30,6 @@ public class LanguageChanger : MonoBehaviour
             }
         }
     }
-
 
     private void OnGUI()
     {
@@ -35,18 +45,23 @@ public class LanguageChanger : MonoBehaviour
 
     public void ChangeLanguage()
     {
-        // Switch language using YG2 module
         string newLang = (LanguageHandler.language == LanguageType.English) ? "ru" : "en";
         YG.YG2.SwitchLanguage(newLang);
-        
-        // Update UI text
-        if (LanguageHandler.language == LanguageType.English)
+    }
+    
+    private void UpdateUI()
+    {
+        GameObject textDino = GameObject.Find("TextDino");
+        if (textDino != null)
         {
-            GameObject.Find("TextDino").GetComponent<Text>().text = "Dinosaur puzzles";
-        }
-        else
-        {
-            GameObject.Find("TextDino").GetComponent<Text>().text = "Пазлы динозавры";
+            if (LanguageHandler.language == LanguageType.English)
+            {
+                textDino.GetComponent<Text>().text = "Dinosaur puzzles";
+            }
+            else
+            {
+                textDino.GetComponent<Text>().text = "Пазлы динозавры";
+            }
         }
     }
 }

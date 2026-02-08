@@ -1,17 +1,18 @@
+using System;
 using UnityEngine;
 using YG;
 
 public static class LanguageHandler
 {
     static public LanguageType language = LanguageType.Russian;
+    
+    public static Action onLanguageChanged;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Initialize()
     {
-        // Get initial language from YG2
         UpdateLanguageFromYG2(YG2.lang);
         
-        // Subscribe to language change events
         YG2.onSwitchLang += UpdateLanguageFromYG2;
         YG2.onCorrectLang += UpdateLanguageFromYG2;
     }
@@ -24,6 +25,8 @@ public static class LanguageHandler
             "ru" => LanguageType.Russian,
             _ => LanguageType.Russian
         };
+        
+        onLanguageChanged?.Invoke();
     }
 
     public static string GetLanguageCode()
