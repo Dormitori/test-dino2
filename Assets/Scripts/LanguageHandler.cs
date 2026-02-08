@@ -11,8 +11,6 @@ public static class LanguageHandler
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Initialize()
     {
-        UpdateLanguageFromYG2(YG2.lang);
-        
         YG2.onSwitchLang += UpdateLanguageFromYG2;
         YG2.onCorrectLang += UpdateLanguageFromYG2;
     }
@@ -27,16 +25,6 @@ public static class LanguageHandler
         };
         
         onLanguageChanged?.Invoke();
-    }
-
-    public static string GetLanguageCode()
-    {
-        return language switch
-        {
-            LanguageType.English => "en",
-            LanguageType.Russian => "ru",
-            _ => "ru"
-        };
     }
 }
 
