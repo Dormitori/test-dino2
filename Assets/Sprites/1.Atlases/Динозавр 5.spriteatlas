@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u0414\u0438\u043D\u043E\u0437\u0430\u0432\u0440 5"
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 4
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 3
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 1eff2ec86083eb04ea898456352dc52d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 6f40bf40da2e668488bd9b8746ac1be7: 21300000
+    - 92b2f801ad4bcde40873d30e759b6b76: 21300000
+    - e72be251c5764124d812b144e7527443: 21300000
+    - 3bf2efa1e79cf594385eb0b527225ef0: 21300000
+    - 2e2bbae13d44db840b6c559e504241b4: 21300000
+    - 00ded542037737e4789829683e7d7c83: 21300000
+    - 81307664f16bed64ca48a6518e3adf0c: 21300000
+    - 98e5cf64ea3a2c843aff40466c932813: 21300000
+    - e4dcf92500de37047b8d27b6301b8c61: 21300000
+    - 97ba1de5b43465b4987f4deca138a0eb: 21300000
+    - 047e12c6c8ba850419837fddff26c880: 21300000
+    - b44bd408857ddcd44aea996f63ef5e8f: 21300000
+    - 0c69fb786d72cde43b80373a2c823653: 21300000
+    - 0dd31d88bc865a045ae4802b7827cd91: 21300000
+    - 09339ce8d7deca149b4e5595597abd1e: 21300000
+    - fd9c3449b996fc342a9384ec934eaeec: 21300000
+    - 57c5aa991fce24444a21df9e2a738d42: 21300000
+    - 9a84abe90779daa4dae85952c3b9f0b7: 21300000
+    - 11c9336ae122e5641a443c0a52b7cd00: 21300000
+    - b250d5ba78d8df44a9d1a3afc4781423: 21300000
+    - 786eb63b2f6526244a6161bf27087cbe: 21300000
+    - 9c65359bfad959d40bcda715d15e9046: 21300000
+    - 7503fefbbd361cd4dbcab4af85627f44: 21300000
+    - 09521f3c7ac415a4d8871ff59a9e5a81: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6f40bf40da2e668488bd9b8746ac1be7, type: 3}
+  - {fileID: 21300000, guid: 92b2f801ad4bcde40873d30e759b6b76, type: 3}
+  - {fileID: 21300000, guid: e72be251c5764124d812b144e7527443, type: 3}
+  - {fileID: 21300000, guid: 3bf2efa1e79cf594385eb0b527225ef0, type: 3}
+  - {fileID: 21300000, guid: 2e2bbae13d44db840b6c559e504241b4, type: 3}
+  - {fileID: 21300000, guid: 00ded542037737e4789829683e7d7c83, type: 3}
+  - {fileID: 21300000, guid: 81307664f16bed64ca48a6518e3adf0c, type: 3}
+  - {fileID: 21300000, guid: 98e5cf64ea3a2c843aff40466c932813, type: 3}
+  - {fileID: 21300000, guid: e4dcf92500de37047b8d27b6301b8c61, type: 3}
+  - {fileID: 21300000, guid: 97ba1de5b43465b4987f4deca138a0eb, type: 3}
+  - {fileID: 21300000, guid: 047e12c6c8ba850419837fddff26c880, type: 3}
+  - {fileID: 21300000, guid: b44bd408857ddcd44aea996f63ef5e8f, type: 3}
+  - {fileID: 21300000, guid: 0c69fb786d72cde43b80373a2c823653, type: 3}
+  - {fileID: 21300000, guid: 0dd31d88bc865a045ae4802b7827cd91, type: 3}
+  - {fileID: 21300000, guid: 09339ce8d7deca149b4e5595597abd1e, type: 3}
+  - {fileID: 21300000, guid: fd9c3449b996fc342a9384ec934eaeec, type: 3}
+  - {fileID: 21300000, guid: 57c5aa991fce24444a21df9e2a738d42, type: 3}
+  - {fileID: 21300000, guid: 9a84abe90779daa4dae85952c3b9f0b7, type: 3}
+  - {fileID: 21300000, guid: 11c9336ae122e5641a443c0a52b7cd00, type: 3}
+  - {fileID: 21300000, guid: b250d5ba78d8df44a9d1a3afc4781423, type: 3}
+  - {fileID: 21300000, guid: 786eb63b2f6526244a6161bf27087cbe, type: 3}
+  - {fileID: 21300000, guid: 9c65359bfad959d40bcda715d15e9046, type: 3}
+  - {fileID: 21300000, guid: 7503fefbbd361cd4dbcab4af85627f44, type: 3}
+  - {fileID: 21300000, guid: 09521f3c7ac415a4d8871ff59a9e5a81, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "\u0428\u0435\u044F"
+  - "\u041D\u043E\u0433\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u0422\u0438\u0440\u0430\u043D\u043E\u0437\u0430\u0432\u0440"
+  - "\u0421\u043F\u0438\u043D\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u0413\u043E\u043B\u043E\u0432\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u041D\u043E\u0433\u0430"
+  - "\u0428\u0435\u044F (\u0442\u0435\u043D\u044C)"
+  - "\u0425\u0432\u043E\u0441\u0442"
+  - "\u0422\u0438\u0440\u0430\u043D\u043E\u0437\u0430\u0432\u0440 (\u0434\u0435\u0440\u0435\u0432\u043E)"
+  - "\u0413\u043E\u043B\u043E\u0432\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u041B\u0430\u043F\u044B"
+  - "\u0422\u0438\u0440\u0430\u043D\u043E\u0437\u0430\u0432\u0440 (\u0442\u0435\u043D\u044C)"
+  - "\u0425\u0432\u043E\u0441\u0442 (\u0442\u0435\u043D\u044C)"
+  - "\u0412\u0442\u043E\u0440\u0430\u044F \u041D\u043E\u0433\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u0413\u043E\u043B\u043E\u0432\u0430"
+  - "\u041D\u043E\u0433\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u0421\u043F\u0438\u043D\u0430"
+  - "\u041B\u0430\u043F\u044B (\u0442\u0435\u043D\u044C)"
+  - "\u0421\u043F\u0438\u043D\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u0428\u0435\u044F (\u0442\u0435\u043D\u044C)"
+  - "\u0412\u0442\u043E\u0440\u0430\u044F \u041D\u043E\u0433\u0430 (\u0442\u0435\u043D\u044C)"
+  - "\u0412\u0442\u043E\u0440\u0430\u044F \u041D\u043E\u0433\u0430"
+  - "\u041B\u0430\u043F\u044B (\u0442\u0435\u043D\u044C)"
+  - "\u0425\u0432\u043E\u0441\u0442 (\u0442\u0435\u043D\u044C)"
+  m_RenderDataMap: {}
+  m_Tag: "\u0414\u0438\u043D\u043E\u0437\u0430\u0432\u0440 5"
+  m_IsVariant: 0

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CompletePuzzleHandler : MonoBehaviour
@@ -107,7 +106,6 @@ public class CompletePuzzleHandler : MonoBehaviour
 
         yield return new WaitForSeconds(animationDuration);
         
-        //_transform.position = startPosition + new Vector2(-0.1f, 0.1f);
         _animationHandler.StartAnimation(shadowAnimationDuration, -1, true, new Vector2(0.1f, -0.1f));
         isPlaying = false;
     }

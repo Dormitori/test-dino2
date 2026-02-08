@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 4
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 3
+      m_CompressionQuality: 40
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: acf7c1e2b88812c4ab5fc04c2ea7a02b, type: 3}
+    - {fileID: 2800000, guid: 86591d48827b0dc448bf95714f73a75a, type: 3}
+    - {fileID: 2800000, guid: 5fa5285a0259b8e4db9ba95e403c2933, type: 3}
+    - {fileID: 2800000, guid: 2a75edc4ee23e44439d371aeca906381, type: 3}
+    - {fileID: 2800000, guid: 92e74c96f54de744cb2da07432b9f93e, type: 3}
+    - {fileID: 2800000, guid: 9cd1fd109d7005b42ba8a8c0ea1f29b5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 9cd1fd109d7005b42ba8a8c0ea1f29b5: 21300000
+    - acf7c1e2b88812c4ab5fc04c2ea7a02b: 21300000
+    - 2a75edc4ee23e44439d371aeca906381: 21300000
+    - 92e74c96f54de744cb2da07432b9f93e: 21300000
+    - 86591d48827b0dc448bf95714f73a75a: 21300000
+    - 5fa5285a0259b8e4db9ba95e403c2933: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9cd1fd109d7005b42ba8a8c0ea1f29b5, type: 3}
+  - {fileID: 21300000, guid: acf7c1e2b88812c4ab5fc04c2ea7a02b, type: 3}
+  - {fileID: 21300000, guid: 2a75edc4ee23e44439d371aeca906381, type: 3}
+  - {fileID: 21300000, guid: 92e74c96f54de744cb2da07432b9f93e, type: 3}
+  - {fileID: 21300000, guid: 86591d48827b0dc448bf95714f73a75a, type: 3}
+  - {fileID: 21300000, guid: 5fa5285a0259b8e4db9ba95e403c2933, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - dino5_braxio
+  - bisticeratops-reconstruction-by-sergey-krasovskiy
+  - dino3_tiran
+  - dino4_spino
+  - dino1_prtiro
+  - dino2_stego
+  m_RenderDataMap: {}
+  m_Tag: Atlas
+  m_IsVariant: 0
