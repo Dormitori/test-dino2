@@ -8,24 +8,10 @@ using UnityEngine.UI;
 
 public class AddressablesLevelLoader : MonoBehaviour
 {
-    public static AddressablesLevelLoader Instance { get; private set; }
-    
     [SerializeField] private Image splashScreen;
     
     private AsyncOperationHandle<SceneInstance> currentSceneHandle;
     
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
     
     public void LoadLevel(string levelAddress)
     {

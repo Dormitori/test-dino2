@@ -57,8 +57,8 @@ public class UIHandler : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
 
         yield return new WaitForSeconds(14);
-        previousButton.SetActive(SceneManager.GetActiveScene().buildIndex > 1);
-        nextButton.SetActive(SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings - 1);
+        previousButton.SetActive(true);
+        nextButton.SetActive(true);
 
         restartButton.SetActive(true);
     }
