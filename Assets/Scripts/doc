@@ -1,0 +1,40 @@
+ADDRESSABLES SETUP GUIDE
+
+1. Install Addressables Package
+   - Window > Package Manager
+   - Search "Addressables"
+   - Install
+
+2. Create Addressables Settings
+   - Window > Asset Management > Addressables > Groups
+   - Click "Create Addressables Settings"
+
+3. Mark Level Scenes as Addressables
+   - Select all level scenes in Assets/Scenes (Level 1 to Level 12)
+   - Right-click > Mark as Addressable
+   - In Addressables Groups window, move levels to a new group called "Levels"
+
+4. Configure Remote Build Path
+   - In Addressables Groups window, select "Levels" group
+   - Inspector > Advanced > Build & Load Paths
+   - Set Build Path: RemoteBuildPath
+   - Set Load Path: your CDN URL (e.g., https://yourcdn.com/bundles)
+
+5. Build Addressables Content
+   - Addressables Groups window > Build > New Build > Default Build Script
+   - Upload generated files from ServerData folder to your CDN
+
+6. Setup Scene
+   MenuScene:
+   - Add AddressablesLevelLoader prefab (empty GameObject with script)
+   - Add SplashScreen Canvas with:
+     * Panel (background)
+     * Slider (progress bar)
+     * TextMeshProUGUI (percentage text)
+   - Assign references in AddressablesLevelLoader
+
+   Level Buttons:
+   - Add MenuLevelButton script to each level button
+   - Set levelIndex (1, 2, 3, etc.)
+
+7. Menu Scene stays local, Level scenes load from CDN via Addressables
