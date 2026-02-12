@@ -30,10 +30,8 @@ public class Balloon : MonoBehaviour
     {
         MoveUp();
 
-        if(!_balloonsHandler.UseMouse)
-            TouchHandle();
-        else
-            MouseHandle();
+        TouchHandle();
+        MouseHandle();
     }
 
     private void Initialize()

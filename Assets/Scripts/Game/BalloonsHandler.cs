@@ -30,11 +30,9 @@ public class BalloonsHandler : MonoBehaviour
         edgeY;
 
     [SerializeField]
-    private bool useMouse;
     private bool isFirst = true;
     private bool firstUse = true;
 
-    public bool UseMouse { get => useMouse; }
     public float MinSpeed { get => minSpeed; }
     public float MaxSpeed { get => maxSpeed; }
     public bool FirstUse { get => firstUse; }

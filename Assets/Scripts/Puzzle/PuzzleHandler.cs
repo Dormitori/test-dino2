@@ -36,10 +36,7 @@ public class PuzzleHandler : MonoBehaviour
     public delegate void OnPlayerWin();
     public event OnPlayerWin onPlayerWin;
 
-    [SerializeField]
-    private bool useMouse;
 
-    public bool UseMouse { get => useMouse; }
     public float CorrectPositionAccuracy { get => correctPositionAccuracy; }
     public float AnimationAccuracy { get => animationAccuracy; }
     public float SmoothDragMultiplier { get => smoothDragMultiplier; }

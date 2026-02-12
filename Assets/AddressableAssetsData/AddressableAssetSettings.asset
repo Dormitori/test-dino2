@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 2115e2083be4aa84e89c7bc4b0b87823
   m_currentHash:
     serializedVersion: 2
-    Hash: 54ea338e4169a8120755b24f10691d01
+    Hash: 5c08ecb7d483c866002f6bc1cc28aa7c
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
       - m_Id: 2a48166d64621ee45bc2c9a92afa04b5
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: 837f4a411ab3c9145835b816d17fd1cd
-        m_Value: https://Dormitori.github.io/test-dino2/RemoteGitHub/
+        m_Value: https://storage.yandexcloud.net/test-dino-bucket/
       - m_Id: a65d46bd04610f5429f675968c32549a
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: b274e27977563c44492fd9b45e2c15ad
